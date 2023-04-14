@@ -244,12 +244,9 @@ img {
   justify-content: center;
   margin-bottom: 8px;
 }
-.policy-icon {
-}
+
 /* СЕКЦІЯ КАРТИНОК, ЩО МИ РОБИМО */
-.our-work {
-  /* padding-top: 120px; */
-}
+
 .pictiure-item:not(:last-child) {
   margin-right: 24px;
 }
@@ -616,6 +613,9 @@ color: #FFFFFF;
    .footer-user-email:focus + .email-descr{
     transform: translateX(-120%);
    }
+   .footer-user-email:not(:placeholder-shown) + .email-descr{
+    transform: translateX(-120%);
+   }
 /* МОДАЛЬНЕ ВІКНО */
 .backdrop {
   position: fixed;
@@ -753,7 +753,7 @@ border-color: var(--button-background);
   align-items: center;
 }
 .privacy-policy{
-  margin-left: 0.04em;
+  /* margin-left: 4px; */
   color: var(--button-background);
 }
 .agree-description span {
