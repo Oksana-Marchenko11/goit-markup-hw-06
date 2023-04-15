@@ -571,7 +571,6 @@ background-color: var(--primary-text-color);
 border: 1px solid #FFFFFF;
 box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
-margin-right: 24px;
 height: 40px;
 width: 264px;
 padding-left: 16px;
@@ -609,6 +608,7 @@ color: #FFFFFF;
     position: relative;
     display: flex;
   align-items: center;
+  margin-right: 24px;
    }
    .footer-user-email:focus + .email-descr{
     transform: translateX(-120%);
@@ -636,13 +636,16 @@ color: #FFFFFF;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 72px;
 }
 .modal-close-btn {
   display: flex;
-  margin-left: auto;
-  margin-bottom: 24px;
-  border-radius: 50%;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 24px;
   height: 24px;
@@ -694,9 +697,12 @@ color: #FFFFFF;
 .user-form:focus + .icon-input {
   fill: var(--button-background);
 }
+.user-form-area{
+  margin-bottom: 16px;
+}
 
 .modal-btn-description {
-  display: inline-block;
+  display: block;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -715,29 +721,32 @@ color: #FFFFFF;
 }
 .modal-text-user {
   width: 100%;
-  height: 138px;
+  height: 120px;
   resize: none;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding-left: 16px;
   font-weight: 400;
+  display: block;
 font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.04em;
-color: rgba(46, 47, 66, 0.4);
-margin-bottom: 16px;
 outline: none;
 transition:border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-text-user:focus{
 border-color: var(--button-background);
 }
+.modal-text-user::placeholder{
+  color:  rgba(46, 47, 66, 0.4);
+}
+
 .text-user-description {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: #8e8f99;
-  display: inline-block;
+  display: block;
   margin-bottom: 4px;
 }
 /* ЧЕКБОКС */
