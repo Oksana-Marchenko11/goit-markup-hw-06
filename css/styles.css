@@ -628,7 +628,7 @@ color: #FFFFFF;
 }
 .modal {
   width: 408px;
-  min-height: 576px;
+  min-height: 584px;
   background-color: #fcfcfc;
   border-radius: 4px;
   position: absolute;
@@ -639,6 +639,7 @@ color: #FFFFFF;
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 72px;
+  padding-bottom: 24px;
 }
 .modal-close-btn {
   display: flex;
@@ -718,6 +719,7 @@ color: #FFFFFF;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: ;
 }
 .modal-text-user {
   width: 100%;
@@ -726,6 +728,7 @@ color: #FFFFFF;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding-left: 16px;
+  padding-top: 8px;
   font-weight: 400;
   display: block;
 font-size: 12px;
